@@ -35,22 +35,55 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
+func turtleToMiddleOfCanvas() {
+    
+    turtle.penUp()
+    turtle.forward(steps: canvas.width / 2)
+    turtle.currentHeading()
+    
+    turtle.left(by: 90)
+    turtle.currentHeading()
+    turtle.penUp()
+    turtle.forward(steps: canvas.height / 2)
+    
+    turtle .right(by: 90)
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+}
 
-/*:
- ## Show the Live View
- Don't see any results?
- 
- Remember to show the Live View (1 then 2):
- 
- ![timeline](timeline.png "Timeline")
+func drawArrow(){
+    let squareSize = 10
+    turtle.penDown()
+    turtle.forward(steps: 5 * squareSize)
+    turtle.left(by: 90)
+    turtle .forward(steps: 2 * squareSize)
+    turtle .right(by: 135)
+    turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+    turtle .right(by: 100)
+    turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+    turtle.right(by: 135)
+    turtle.forward(steps: 2 * squareSize)
+    turtle.left(by: 102)
+    turtle.forward(steps: 5 * squareSize)
+    turtle.right(by: 90)
+    turtle.forward(steps: 2 * squareSize)
+    turtle.left(by: 90)
+    turtle.drawSelf()
+}
+    
+let squareSize = 8
 
- ## Use source control
- To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
- 
- Please commit and push your work often.
- 
- ![source_control](source-control.png "Source Control")
- */
+for _ in 1...3{
+    
+    turtleToMiddleOfCanvas()
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 8 * squareSize)
+    
+}
+
+
+
+
+
+
+
