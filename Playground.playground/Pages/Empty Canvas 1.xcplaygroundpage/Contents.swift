@@ -4,8 +4,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 600
-let preferredHeight = 600
+let preferredWidth = 300
+let preferredHeight = 300
 /*:
  ## Required code
  
@@ -51,38 +51,170 @@ func turtleToMiddleOfCanvas() {
 }
 
 func drawArrow(){
-    let squareSize = 10
-    turtle.penDown()
+    turtle.drawSelf()
+    let squareSize = 5
     turtle.forward(steps: 5 * squareSize)
-    turtle.left(by: 90)
-    turtle .forward(steps: 2 * squareSize)
-    turtle .right(by: 135)
+    turtle.right(by: 45)
     turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
-    turtle .right(by: 100)
+    turtle.right(by: 90)
+    turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+    turtle.right(by: 45)
+    turtle.forward(steps: 7 * squareSize)
+    turtle.right(by: 135)
+    turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+    turtle.left(by: 90)
     turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
     turtle.right(by: 135)
-    turtle.forward(steps: 2 * squareSize)
-    turtle.left(by: 102)
-    turtle.forward(steps: 5 * squareSize)
-    turtle.right(by: 90)
-    turtle.forward(steps: 2 * squareSize)
-    turtle.left(by: 90)
     turtle.drawSelf()
+    
+    
 }
     
-let squareSize = 8
+let squareSize = 7
 
-for _ in 1...3{
+for _ in 1...9{
     
-    turtleToMiddleOfCanvas()
+    
     drawArrow()
     turtle.penUp()
-    turtle.forward(steps: 8 * squareSize)
+    turtle.forward(steps: 7 * squareSize)
     
 }
 
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 6 * squareSize * 7)
+turtle.right(by: 180)
 
+for _ in 1...9{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
 
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 6 * squareSize * 7)
+turtle.right(by: 180)
+
+for _ in 1...9{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 6 * squareSize * 7)
+turtle.right(by: 180)
+
+for _ in 1...9{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 6 * squareSize * 7)
+turtle.right(by: 180)
+
+for _ in 1...9{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 7 * squareSize * 8)
+turtle.right(by: 180)
+
+for _ in 1...9{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 7 * squareSize * 8)
+turtle.right(by: 180)
+
+for _ in 1...9{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 7 * squareSize * 8)
+turtle.right(by: 180)
+
+for _ in 1...7{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 7 * squareSize * 7)
+turtle.right(by: 180)
+
+for _ in 1...7{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 4 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 7 * squareSize * 6)
+turtle.right(by: 180)
+
+for _ in 1...7{
+    
+    
+    drawArrow()
+    turtle.penUp()
+    turtle.forward(steps: 7 * squareSize)
+    
+}
 
 
 

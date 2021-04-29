@@ -4,8 +4,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 600
-let preferredHeight = 600
+let preferredWidth = 300
+let preferredHeight = 300
 /*:
  ## Required code
  
@@ -51,15 +51,106 @@ func turtleToMiddleOfCanvas() {
 
 }
 
+func drawstar() {
+    
+turtle.drawSelf()
 let squareSize = 5
-turtle.drawSelf()
+turtle.forward(steps: 2 * squareSize)
 turtle.left(by: 60)
-turtle.forward(steps: 6 * squareSize)
-turtle.right(by: 60)
-turtle.forward(steps: 6 * squareSize)
-turtle.right(by: 60)
-turtle.forward(steps: 6 * squareSize)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.right(by: 110)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.left(by: 50)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.right(by: 110)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.left(by: 50)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.right(by: 115)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.left(by: 50)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.right(by: 110)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.left(by: 50)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.right(by: 110)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.left(by: 50)
+turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+turtle.right(by: 115.1)
 turtle.drawSelf()
+
+}
+
+
+
+let squareSize = 7
+
+for _ in 1...5{
+    
+drawstar()
+turtle.penUp()
+turtle.forward(steps: 10 * squareSize)
+}
+turtle.left(by: 90)
+turtle.forward(steps: 8 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 9 * squareSize * 5)
+turtle.right(by: 180)
+
+for _ in 1...5{
+    
+drawstar()
+turtle.penUp()
+turtle.forward(steps: 10 * squareSize)
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 8 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 9 * squareSize * 5)
+turtle.right(by: 180)
+
+for _ in 1...5{
+    
+drawstar()
+turtle.penUp()
+turtle.forward(steps: 10 * squareSize)
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 8 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 9 * squareSize * 5)
+turtle.right(by: 180)
+
+for _ in 1...5{
+    
+drawstar()
+turtle.penUp()
+turtle.forward(steps: 10 * squareSize)
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 8 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 9 * squareSize * 5)
+turtle.right(by: 180)
+
+for _ in 1...5{
+    
+drawstar()
+turtle.penUp()
+turtle.forward(steps: 10 * squareSize)
+}
+
+
+
+
+
+
+
 /*:
  ## Show the Live View
  Don't see any results?
